@@ -1,0 +1,40 @@
+.screenshot-upload-button {
+  width: 497px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 39px;
+  border: 1px solid #b88e57;
+  background: #fdf3e5;
+  color: #000;
+  text-align: center;
+  font-family: Frank Ruhl Libre;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: block;
+  text-align: center;
+  padding: 22px;
+}
+.screenshot-upload-container{
+  width: 90%;
+  display: flex;
+  justify-content: center;
+}
+.screenshot-upload-button::placeholder {
+  color: #000;
+  text-align: center;
+  font-family: Frank Ruhl Libre;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.hidden-input {
+  display: none;
+}
+
+#inputscreeshot{
+  margin-top: 19px;
+}

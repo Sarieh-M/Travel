@@ -1,0 +1,227 @@
+.paymentviacardform-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 178px;
+  width: 100%;
+}
+.paymentviacardform-container h2 {
+  color: #b98155;
+  text-align: center;
+  font-family: Frank Ruhl Libre;
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 0;
+}
+
+.paymentviacardform {
+  margin: 10px;
+  max-width: 838px;
+  width: 88.6%;
+  height: 431px;
+  flex-shrink: 0;
+  border-radius: 40px;
+  background: rgba(254, 205, 129, 0.6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cardnumber-container {
+  width: 100%;
+}
+
+.cardnumber-container input {
+  margin-left: 0px;
+  margin-right: 40px;
+  width: 75%;
+  height: 84px;
+  border-radius: 40px;
+  border: 1px solid #b88e57;
+  background: #fdf3e5;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 51px;
+  padding-right: 20%;
+  margin-left: 14px;
+}
+
+.cardnumber-container input::placeholder {
+  margin: 14px;
+  width: 90%;
+  height: 84px;
+  background: #fdf3e5;
+  color: #372723;
+  text-align: center;
+  font-family: Frank Ruhl Libre;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.date-cvv {
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% - 28px);
+}
+
+#expirationDate {
+  max-width: 591px;
+  height: 84px;
+  border-radius: 40px;
+  border: 1px solid #b88e57;
+  background: #fdf3e5;
+  text-align: center;
+  font-family: Frank Ruhl Lib;
+  font-size: 30px;
+  margin-top: 14px;
+  height: 82px;
+  margin-bottom: 35px;
+  width: 70%;
+  align-self: flex-start;
+}
+#expirationDate::placeholder {
+  flex-shrink: 0;
+  background: #fdf3e5;
+  color: #372723;
+  text-align: center;
+  font-family: Frank Ruhl Libre;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+#cvv {
+  width: 167px;
+  height: 84px;
+  flex-shrink: 0;
+  border-radius: 40px;
+  border: 1px solid #b88e57;
+  background: #fdf3e5;
+  text-align: center;
+  font-family: Frank Ruhl Lib;
+  font-size: 30px;
+  margin-left: 14px;
+  margin-top: 14px;
+  height: 82px;
+  margin-bottom: 35px;
+}
+#cvv::placeholder {
+  color: #372723;
+  text-align: center;
+  font-family: Frank Ruhl Libre;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.paymentviacardform button {
+  width: 308px;
+  height: 84px;
+  flex-shrink: 0;
+  border-radius: 40px;
+  border: 1px solid #b88e57;
+  background: rgba(185, 129, 85, 0.84);
+  color: #fff;
+  text-align: center;
+  font-family: Frank Ruhl Libre;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.paymentviacardform-container p {
+  color: #372723;
+  text-align: center;
+  font-family: Frank Ruhl Libre;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+#switchtoUPI {
+  color: #b88e57;
+  font-family: Frank Ruhl Libre;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+@media (max-width: 1123px) and (min-width: 1023px) {
+  #cvv::placeholder,
+  #expirationDate::placeholder,
+  .cardnumber-container input::placeholder {
+    font-size: 18px;
+  }
+  .cardnumber-container input,
+  .cardnumber-container input::placeholder {
+    text-align: start;
+    text-indent: 20px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .paymentviacardform-container h2 {
+    color: #3d220d;
+    -webkit-text-stroke: 0.1px #fff;
+  }
+}
+
+/*and*/
+@media (max-width: 768px) {
+  #cvv::placeholder,
+  #expirationDate::placeholder,
+  .cardnumber-container input::placeholder {
+    font-size: 18px;
+  }
+  .cardnumber-container input,
+  .cardnumber-container input::placeholder {
+    text-align: left;
+    text-indent: 16px;
+  }
+  .date-cvv {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cardnumber-container input {
+    padding-right: 24%;
+    width: 70%;
+  }
+
+  #expirationDate {
+    align-self: center;
+    margin-bottom: 7px;
+  }
+  #cvv {
+    margin: 7px;
+  }
+
+  .paymentviacardform-container h2 {
+    font-size: 50px;
+  }
+  .paymentviacardform button {
+    height: 46px;
+    font-size: 20px;
+    width: auto;
+    margin-top: 10px;
+  }
+  #switchtoUPI {
+    color: #fff;
+  }
+}
+
+/*and*/
+@media (max-width: 450px) {
+  .cardnumber-container input {
+    padding-right: 20%;
+    width: 70%;
+  }
+}

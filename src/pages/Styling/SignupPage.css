@@ -1,0 +1,118 @@
+.signup_header {
+  padding-top: 56px;
+  width: 100%;
+  height: 86px;
+  display: flex;
+  align-items: center;
+  opacity: 1;
+}
+
+.signup_header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 56px;
+  background: #fff4e5;
+}
+
+.signup_page_container {
+  display: flex;
+}
+
+.signup_form_container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: auto;
+  flex-grow: 1;
+}
+
+.signup_page_text_overlay {
+  position: absolute;
+  top: 162px;
+  left: 43px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: Frank Ruhl Libre;
+  font-size: 90px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.telescope_image {
+  align-self: flex-start;
+  flex-shrink: 1;
+  width: 55%;
+  height: auto;
+  max-width: 691px;
+  max-height: 880px;
+  object-fit: contain;
+}
+
+@media (min-width: 1024px){
+  .signup_header{
+    background: #b88e57;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .signup_header{
+    height: 66px;
+    background: #b88e57;
+  }
+
+  .signup_header::before{
+    background-color: #69C3D8;
+  }
+
+  .signup_page_container{
+    background: url('../../assets/telescope2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 900px;
+    
+  }
+  .telescope_image{
+    display: none;
+  }
+
+  .signup_page_text_overlay{
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+    
+  .signup_header {
+    height: 46px;
+    background: #EAD9C2;;
+  }
+  .signup_header::before{
+    background: url('../../assets/hieroglyphs.png');
+    background-size: cover;
+    min-width: 305px
+  }
+
+  .signup_page_container{
+    background: url('../../assets/hieroglyphs.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -110px;
+    height: 660px;
+  }
+
+
+  .telescope_image{
+    display: none;
+  }
+
+  .signup_page_text_overlay{
+    display: none;
+  }
+}

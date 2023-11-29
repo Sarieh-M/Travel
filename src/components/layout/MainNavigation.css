@@ -1,0 +1,121 @@
+.header {
+  padding-top: 56px;
+  width: 100%;
+  height: 86px;
+  display: flex;
+  align-items: center;
+  background: #b88e57;
+  opacity: 1;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 56px;
+  background: #fff4e5;
+}
+.logo_circle {
+  margin-left: 20px;
+  margin-right: 0;
+  padding-right: 0;
+  font-size: 2rem;
+  color: white;
+  z-index: 1;
+}
+
+.nav {
+  z-index: 1;
+  opacity: 1;
+  width: 100%;
+}
+.nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  padding: 0;
+  opacity: 1;
+}
+
+.nav li {
+  margin: 10px;
+  font-size: 37px;
+  color: #fff;
+  text-align: center;
+  font-family: Frank Ruhl Libre;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  flex-grow: 1;
+  opacity: 1;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav a:hover,
+.nav a:active {
+  color: #000000;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .header {
+    height: 66px;
+  }
+
+  .nav li {
+    margin: 5px;
+    font-size: 28px;
+    color: #fff;
+    text-align: center;
+    font-family: Frank Ruhl Libre;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .logo_circle {
+    margin: 10px;
+    width: 125px;
+  }
+  .logo_circle img {
+    width: 125px;
+    height: 125px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header {
+    height: 46px;
+  }
+
+  .nav li {
+    color: #fff;
+    text-align: center;
+    font-family: Frank Ruhl Libre;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: auto;
+  }
+
+  .logo_circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 66px;
+    margin-left: 4px;
+  }
+
+  .logo_circle img {
+    width: 61px;
+    height: 61px;
+  }
+}
+

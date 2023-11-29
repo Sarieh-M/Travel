@@ -1,0 +1,82 @@
+.footer {
+  background-color: #f2f2f2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  flex-direction: row;
+  background-color: #b88e57;
+  color: #fff;
+  font-family: Frank Ruhl Libre;
+  font-size: 3vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: calc(100%-20px);
+}
+
+.footer div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+
+.footer_socialmedia a,
+.footer_socialmedia span {
+  margin: 10px;
+}
+
+.footer_phone a,
+.footer_phone span {
+  margin: 10px;
+}
+
+.footer_mail a,
+.footer_mail span {
+  margin: 10px;
+}
+
+@media(min-width: 1024px){
+  .footer{
+    height: 56px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .footer {
+    font-size: 2vw;
+    height: 56px;
+  }
+  .footer-image {
+    width: 7vw;
+  }
+
+  .footer_socialmedia a,
+  .footer_socialmedia span,
+  .footer_phone a,
+  .footer_phone span,
+  .footer_mail a,
+  .footer_mail span {
+    margin: 4px;
+  }
+}
+
+@media(max-width: 767px){
+  .footer {
+    font-size: 12px;
+    height: 46px;
+  }
+  .footer-image {
+    width: 5vw;
+  }
+
+  .footer_socialmedia a,
+  .footer_socialmedia span,
+  .footer_phone a,
+  .footer_phone span,
+  .footer_mail a,
+  .footer_mail span {
+    margin: 4px;
+  }
+}

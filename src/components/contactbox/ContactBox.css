@@ -1,0 +1,110 @@
+.contact-box {
+  width: 637px;
+  height: 585px;
+  flex-shrink: 0;
+  border-radius: 40px;
+  background: rgba(254, 205, 129, 0.6);
+  margin: 10px;
+  margin-top: 182px;
+  min-height: 585px;
+}
+
+.contact-box h2 {
+  color: #372723;
+  text-align: center;
+  font-family: Frank Ruhl Libre;
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-info p {
+  margin: 6px;
+  color: #000;
+  text-align: center;
+  font-family: Frank Ruhl Libre;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  align-items: flex-start;
+}
+
+.phone,
+.address,
+.email,
+.instagram {
+  display: flex;
+}
+
+.phone img,
+.address img,
+.email img,
+.instagram img {
+  width: 50px;
+  height: 50px;
+  margin: 22px;
+  margin-left: 36px;
+  margin-right: 12px;
+}
+
+.phone img {
+  margin-top: 20px;
+  margin-bottom: 55px;
+}
+
+.phone-numbers,
+.email-addresses, 
+.address p,
+.instagram p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+}
+
+@media (max-width: 1345px) {
+  .contact-box {
+    margin: 10px;
+    margin-top: 182px;
+    width: 90%;
+    height: auto;
+  }
+}
+
+
+@media (min-width: 1024px){
+  .signup_header{
+    background: #b88e57;
+  }
+}
+
+@media(max-wwidth: 767px){
+  .contact-box{
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1023px) {
+ .contact-box{
+  background: rgba(254, 205, 129, 0.88);
+ }
+}
+
+@media (max-width: 767px){
+  .contact-box p{
+    font-size: 14px;
+  }
+  .contact-box h2{
+    font-size: 40px;
+  }
+}

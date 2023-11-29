@@ -1,0 +1,128 @@
+.paymentupi-container {
+  margin-top: 270px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.paymentupi-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 623px;
+  height: 476px;
+  flex-shrink: 0;
+  border-radius: 39px;
+  background: rgba(254, 205, 129, 0.6);
+  color: #372723;
+  text-align: center;
+  font-family: Frank Ruhl Libre;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.paymentupi-form input {
+  width: 543px;
+  height: 84px;
+  flex-shrink: 0;
+  border-radius: 39px;
+  border: 1px solid #b88e57;
+  background: #fdf3e5;
+  margin: 19px;
+  font-size: 35px;
+  text-align: center;
+}
+
+.paymentupi-form input::placeholder {
+  color: #372723;
+  text-align: center;
+  font-family: Frank Ruhl Libre;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.switch-to-card-payment {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#first_label {
+  margin-top: 43px;
+}
+
+#second_label {
+  margin-top: 57px;
+}
+
+.paymentcard_navlink {
+  color: #b88e57;
+  font-family: Frank Ruhl Libre;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+}
+
+.paymentupi-container p {
+  color: #372723;
+  text-align: center;
+  font-family: Frank Ruhl Libre;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+@media (max-width: 1277px) {
+  .paymentupi-container {
+    margin-top: 290px;
+  }
+  .paymentupi-form {
+    width: 90%;
+  }
+  .paymentupi-form input {
+    width: 90%;
+  }
+  #inputscreenshot {
+    width: 90%;
+    border-radius: 39px;
+    border: 1px solid #b88e57;
+    background: #fdf3e5;
+    color: #000;
+    text-align: center;
+    font-family: Frank Ruhl Libre;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: block;
+    text-align: center;
+    padding: 22px;
+    margin-right: 0px;
+  }
+}
+
+@media  (max-width: 1023px) {
+  .paymentupi-form {
+    background: rgba(254, 205, 129, 0.9);
+  }
+
+  .paymentcard_navlink {
+    color: #ffc67c;
+    font-family: Frank Ruhl Libre;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+  }
+}
+

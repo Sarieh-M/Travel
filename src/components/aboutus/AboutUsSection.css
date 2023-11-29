@@ -1,0 +1,67 @@
+.about-section {
+  background-image: url("../../assets/AboutusBackground.png");
+  background-size: cover;
+  background-position: center;
+  height: 1024px;
+  display: flex;
+  justify-content: center;
+  top: -142px;
+  position: relative;
+  z-index: 0;
+}
+
+.about-section h2 {
+  width: 38.12%;
+  color: #372723;
+  text-align: center;
+  text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  font-family: Frank Ruhl Libre;
+  font-size: 90px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 266px;
+}
+
+.about-content {
+  margin: 41px;
+  margin-top: 194px;
+  height: 759px;
+  width: 59%;
+  border-radius: 40px;
+  background: rgba(254, 205, 129, 0.6);
+  padding: 20px;
+}
+
+.about-text p{
+  color: #372723;
+  text-align: center;
+  font-family: Frank Ruhl Libre;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.about-text h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+@media (max-width:  767px) {
+  .about-section{
+    flex-direction: column;
+  }
+  .about-section h2{
+    margin-top: 166px;
+    width: auto;
+    font-size: 55px;
+  }
+  .about-content{
+    margin-top: auto;
+    align-self: center;
+    width: auto;
+    margin: 10px;
+  }
+  
+}

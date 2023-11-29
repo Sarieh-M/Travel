@@ -1,0 +1,31 @@
+.paymentviacard_page_container {
+  display: flex;
+  flex-direction: row;
+}
+
+.card_image {
+  margin-top: 172px;
+}
+
+.card_form_container {
+  flex: 1;
+  align-self: center;
+}
+
+/*(min-width: 768px) and*/
+@media  (max-width: 1023px) {
+  .card_image {
+    display: none;
+  }
+  .card_form_container {
+    background: url("../../assets/visa2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .paymentviacardform-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

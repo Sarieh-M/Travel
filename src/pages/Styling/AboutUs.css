@@ -1,0 +1,37 @@
+
+.header_aboutus{
+    position: relative;
+    padding-top: 56px;
+    width: 100%;
+    height: 86px;
+    display: flex;
+    align-items: center;
+    background: #b88e57;
+    z-index: 10;
+    opacity: 1;
+  }
+
+  .header_aboutus::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 56px;
+    background-image: url("../../assets/AboutusBackground.png");
+    background-position: top;
+    opacity: 1;
+    z-index: -1;
+  }
+
+  
+@media (min-width: 768px) and (max-width: 1023px) {
+  .header_aboutus{
+    height: 66px;
+  }
+} 
+@media (max-width: 768px) {
+  .header_aboutus{
+    height: 46px;
+  }
+}

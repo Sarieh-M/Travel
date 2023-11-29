@@ -1,0 +1,161 @@
+.login_header {
+  padding-top: 56px;
+  width: 100%;
+  height: 86px;
+  display: flex;
+  align-items: center;
+  background: #b88e57;;
+  opacity: 1;
+}
+
+.login_header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 56px;
+  background: #fff4e5;
+}
+.nav_login {
+  z-index: 1;
+  opacity: 1;
+  width: 100%;
+}
+.nav_login ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  padding: 0;
+  opacity: 1;
+}
+.nav_login li {
+  margin: 10px;
+  font-size: 37px;
+  color: #fff;
+  text-align: center;
+  font-family: Frank Ruhl Libre;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  flex-grow: 1;
+  opacity: 1;
+}
+
+.nav_login a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav_login a:hover,
+.nav_login a:active {
+  color: #000;
+}
+
+.logo_circle {
+  margin-left: 20px;
+  margin-right: 0;
+  padding-right: 0;
+  font-size: 2rem;
+  color: white;
+  z-index: 1;
+}
+
+.landingpage_container{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  min-height: 922px;
+  height: 100%;
+}
+
+.image {
+  align-self: flex-end;
+  flex-shrink: 1;
+  max-width: 60%;
+  height: auto;
+  top: 56px;
+  left: 587px;
+  margin-left: 10px;
+  object-fit: contain;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .login_header{
+    height: 66px;
+  }
+  .login_header::before{
+    background-color: #ffe4bc;
+  }
+  .nav_login li {
+    margin: 5px;
+    font-size: 28px;
+    color: #000;
+    text-align: center;
+    font-family: Frank Ruhl Libre;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .landingpage_container{
+    background: url('../../assets/mosque2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    background-color: #ffe4bc;
+    
+  }
+  .image{
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .image{
+    display: none;
+  }
+  .landingpage_container{
+    background: url('../../assets/rowan-heuvel.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .login_header {
+    height: 46px;
+    background: #CBB39A;
+  }
+
+  .nav_login li {
+    text-align: center;
+    font-family: Frank Ruhl Libre;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 4px;
+  }
+
+  .nav_login a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .nav_login a:hover,
+  .nav_login a:active {
+    color: #fff;
+  }
+
+  
+.login_header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 56px;
+  background-color: #DEC8A3;
+  opacity: 1;
+}
+}

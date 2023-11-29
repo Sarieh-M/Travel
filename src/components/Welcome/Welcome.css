@@ -1,0 +1,57 @@
+.container {
+  flex: 1;
+  background-color: "#f0f0f0";
+  text-align: "center";
+  margin-top: 16.5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  overflow: auto;
+  width: 30%;
+}
+
+.welcome {
+  position: absolute;
+  top: 162px;
+  width: 29.0625rem;
+  height: 6.8125rem;
+  flex-shrink: 0;
+  color: #372723;
+  text-align: center;
+  text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  font-family: Frank Ruhl Libre;
+  font-size: 5.625rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.to_agency {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .welcome {
+    width: 263px;
+    height: 50px;
+    top: 106px;
+    left: 36px;
+  }
+  .to_agency {
+    width: 200px;
+    height: 86px;
+    position: absolute;
+    top: 270px;
+    left: 90px;
+    display: block;
+    color: #372723;
+    text-align: center;
+    font-family: Frank Ruhl Libre;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
